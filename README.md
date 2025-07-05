@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
 
-## Project info
+# 📊 SEUSL Academic Results Portal
 
-**URL**: https://lovable.dev/projects/89ddd0ad-c364-4057-9a82-4077eef8ce75
+A modern and user-friendly academic portal for students at South Eastern University of Sri Lanka (SEUSL) to view their semester results, GPA/CGPA progress, and academic status. Built with ease-of-use and clarity in mind, the system features both a **Student Login** interface and an **Admin Panel** for result uploads.
 
-## How can I edit this code?
+![Login Page Screenshot](./assets/login.png)
+![Dashboard Screenshot](./assets/dashboard.png)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🔧 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/89ddd0ad-c364-4057-9a82-4077eef8ce75) and start prompting.
+### 🎓 Student Portal
+- Secure login using student ID and password.
+- View current **CGPA**, **SGPA**, and **academic standing**.
+- See semester-wise result breakdown.
+- Visual chart showing **SGPA trends** across semesters.
+- Track **credit completion progress**.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🛠️ Admin Panel
+- Upload semester results using CSV files.
+- Automatically calculate GPA/CGPA for each student.
+- Add, edit, and delete student result records.
+- Role-based access control.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💡 Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js / Express.js *(optional depending on deployment setup)*
+- **Database**: Firebase / MongoDB / Google Sheets API *(depending on your choice)*
+- **Authentication**: Firebase Auth / Custom Auth
+- **Deployment**: Netlify
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 CSV Format for Admin Upload
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+CSV uploads must follow this structure:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+StudentID, Semester, CourseCode, CourseTitle, Grade, Credit
+SEU/IS/20/EG/078, 4, IS401, Database Systems, B+, 3
+...
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Getting Started
 
-**Use GitHub Codespaces**
+### 1. Clone the repo
+```bash
+git clone https://github.com/yourusername/seusl-results-portal.git
+cd seusl-results-portal
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## What technologies are used for this project?
+### 3. Run locally
+```bash
+npm start
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📦 Folder Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/
+│   ├── LoginForm.jsx
+│   ├── Dashboard.jsx
+│   ├── ResultTable.jsx
+│   └── Chart.jsx
+├── pages/
+│   ├── AdminPanel.jsx
+│   └── StudentPortal.jsx
+├── utils/
+│   └── GPAcalculator.js
+├── assets/
+│   └── logo.png
+```
 
-Simply open [Lovable](https://lovable.dev/projects/89ddd0ad-c364-4057-9a82-4077eef8ce75) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## ✅ Future Improvements
 
-Yes, you can!
+- Email notification system for result release
+- Password reset via email
+- Mobile-friendly UI enhancements
+- Faculty-wise filtering & analytics
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 👨‍💻 Author
+
+**S. Mithushan**  
+SEU/IS/20/EG/078 – Electrical and Electronics Engineering  
+South Eastern University of Sri Lanka  
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
