@@ -4,6 +4,8 @@
 A modern and user-friendly academic portal for students at South Eastern University of Sri Lanka (SEUSL) to view their semester results, GPA/CGPA progress, and academic status. Built with ease-of-use and clarity in mind, the system features both a **Student Login** interface and an **Admin Panel** for result uploads.
 
 https://acadamyresults.netlify.app/
+User name = SEU/IS/20/EG/078
+password = seusl
 
 ---
 
