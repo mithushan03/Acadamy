@@ -23,7 +23,7 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
 
     // Simulate authentication delay
     setTimeout(() => {
-      if (studentId == 'SEU/IS/20/EG/078'&& password=='seusl') {
+      if (studentId == 'SEU/IS/20/EG/078'&& password=='mithu') {
         onLogin({ studentId, password });
         toast({
           title: "Login Successful",
