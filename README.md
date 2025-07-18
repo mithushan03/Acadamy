@@ -5,7 +5,7 @@ A modern and user-friendly academic portal for students at South Eastern Univers
 
 https://acadamyresults.netlify.app/
 User name = SEU/IS/20/EG/078
-password = seusl
+password = mithu
 
 ---
 
